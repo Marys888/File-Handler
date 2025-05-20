@@ -7,7 +7,6 @@ public class FileHandler {
 
 
     public String writeFile(String path, String content) {
-        final String BASE_PATH = "files/";
         try (FileWriter fwr = new FileWriter(path)) {
             fwr.write(content);
             return "Success";
