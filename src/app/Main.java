@@ -5,7 +5,7 @@ public class Main {
         String fileName = "contentFile.txt";
         FileHandler fileHandler = new FileHandler();
 
-        String outputWritten = "RESULT: " + fileHandler.writeFile("I didn't know what to write here, so you're seeing this text instead.");
+        String outputWritten = "RESULT: " + fileHandler.writeFile(fileName,"I didn't know what to write here, so you're seeing this text instead.");
         String outputRead = "FILE CONTENT: " + fileHandler.readFile(fileName);
 
         getOutput(outputWritten);
